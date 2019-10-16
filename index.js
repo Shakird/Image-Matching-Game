@@ -160,15 +160,15 @@ function notMatching() {
 function popUpModal() {
   popUp.innerHTML =
     `<h1 class="heading-one">Congratulations!</h1>
-	<h4 class="heading-four">Your stats</h4>
-	<p class="subhead">Moves:</p><p class="text-white">${moves}</p>
-	<p class="subhead">Time:</p><p class="text-white">${minutes}&nbsp;:&nbsp;${seconds}</p>
-	<p class="subhead">Rating:</p><p class="stars-modal text-white">${stars}</p>
-	<p class="text-white">Would you like to play again?</p>
-	<div class="restart" onclick="resetBoard()">
+    <h4 class="heading-four">Your stats</h4>
+    <p class="subhead">Moves:</p><p class="text-white">${moves}</p>
+    <p class="subhead">Time:</p><p class="text-white">${minutes}&nbsp;:&nbsp;${seconds}</p>
+    <p class="subhead">Rating:</p><p class="stars-modal text-white">${stars}</p>
+    <p class="text-white">Would you like to play again?</p>
+    <div class="restart" onclick="resetBoard()">
     <i class="fas fa-redo text-white"></i>
   </div>
-	 `;
+     `;
 }
 
 // count and display time
