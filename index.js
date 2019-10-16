@@ -60,6 +60,9 @@ function resetBoard() {
 // style accordingly
 
 function cardClick() {
+  // Kick out if we click another card before the previous events could end.
+  if (clickedCards.length === 2) return;
+
   this.classList.add('show', 'open');
   clickedCards.push(event.target);
   if (clickedCards.length === 2) {
